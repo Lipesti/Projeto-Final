@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://prod.spline.design/Sh0XPlsLNe9oTMfh/scene.splinecode">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <title>Happy House</title>
+  <link rel="shortcut icon" href="img/1.png" type="image/x-icon">
+  <style>
+    body,
+    html {
+      cursor: url(img/simbolo-de-negocios-imobiliarios-chave-da-casa.svg), default;
+      height: auto;
+      background-color: rgba(250, 235, 215, 0.31);
+      font-family: 'Calibri', 'Helvetica', sans-serif;
+    }
+
+    .navbar {
+      height: auto;
+      background-color: #f5c26483;
+      cursor: url(img/simbolo-de-negocios-imobiliarios-chave-da-casa.svg), default;
+
+    }
+
+
+
+    #logo,
+    a {
+      position: relative;
+      bottom: 1rem;
+
+
+    }
+
+
+    #navbarScroll {
+      background-color: #17353B;
+      max-width: 600px !important;
+      border-radius: 20px;
+      margin-right: 10%;
+      font-weight: bold;
+
+    }
+
+    ul {
+      text-transform: uppercase;
+      margin-top: 1.5rem;
+
+    }
+
+    .nav-link {
+      color: white;
+    }
+
+    ul>li>a:hover {
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    a.dropdown-item {
+      color: white;
+      font-weight: bold;
+    }
+
+    .apresentar {
+      margin-left: 1%;
+    }
+
+    #map {
+      border: 5px solid rgba(43, 255, 106, 0.603);
+      max-width: 40vw;
+      margin-right: 1.05rem;
+      border-radius: 10px;
+      position: relative;
+      right: 2.4rem;
+      bottom: 8rem;
+      float: right;
+    }
+
+    #map:hover {
+      border: 5px solid rgb(1, 225, 20);
+
+    }
+
+    footer {
+      align-items: center;
+      height: auto;
+      background-color: #edd0a6f6;
+      font-weight: bold;
+      margin-top: 10%;
+    }
+
+
+    .animation-name {
+      animation: animation-name 5s ease-in-out alternate infinite;
+
+    }
+
+    /* Defines the animation */
+    @keyframes animation-name {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    iframe {
+      border: 1px solid black;
+      position: relative;
+      height: 0;
+
+    }
+
+
+    .teste {
+      margin-left: 2%;
+      padding-left: 5rem;
+      margin-top: 5%;
+    }
+
+    .teste img {
+      -webkit-transition: -webkit-transform .5s ease;
+      transition: transform .5s ease-in;
+
+    }
+
+    .teste:hover {
+      margin-top: 30%;
+    }
+
+    .teste:hover img {
+      transform: scale(1.5);
+
+    }
+
+    .mapa iframe {
+
+      height: 100%;
+      width: 100%;
+      position: relative;
+
+    }
+
+    .geo {
+      color: white;
+      text-shadow: 3px 3px 3px black;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar  navbar-expand-lg me-2">
+      <div class="container-fluid ">
+        <a class="navbar-brand  mt-4" href="#"><img id="logo" src="img/1 (1).png" class="img-fluid" width="142">
+          <h1 style="font-weight: bold; font-family: cursive; text-shadow: 2px 3px 3px white; color: #17353B;">Happy
+            House</h1>
+        </a>
+        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center " id="navbarScroll">
+          <ul class="navbar-nav navbar-nav-scroll  " style="--bs-scroll-height: 200px; ">
+            <li class="nav-item m-lg-3">
+              <a class="nav-link  mx-4 mt-1" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item m-lg-3 dropdown">
+              <a class="nav-link  dropdown-toggle mx-4" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Casas
+              </a>
+              <ul class="dropdown-menu justify-content-center mt-md-4 ">
+
+                <li><a class="dropdown-item bg-success mt-3" href="compra.html">Comprar</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item bg-success mt-5" href="#">Alugar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item m-lg-3">
+              <a class="nav-link mx-4" href="#">Sobre nós</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container ">
+      
+      <div class="row mb-5 mt-3 m-auto bg-light">
+        <div class="col-md-6 d-md-block m-auto" style="width: 300px; height: 300px;font-weight: bold;">
+          <img class="img-fluid rounded-5" style="width: 300px; height: 300px;" src="img/casa1.jpg">
+        </div> 
+        <div class="col-md-6 d-flex">
+          <div class="align-self-start text-center" style="font-weight: bold;">
+            <h1 style="font-weight: bold;">R$ 280.000,00</h1>
+            <p class="mt-5">
+              Descubra o seu novo lar! Esta linda casa à venda oferece espaços amplos, um jardim encantador e acabamentos de alta qualidade. Não perca a oportunidade de viver em grande estilo!
+            </p>
+          </div>
+        </div>
+       
+       
+      </div>
+      <div class="row bg-light">
+        <div class="col-md-6 m-auto mb-5 mt-3  d-md-block" style="width: 300px; height: 300px;">
+          <img class="img-fluid rounded-5" style="width: 300px; height: 300px;" src="img/20171011fachada-casa-simples-pequena-99.jpg">
+        </div> 
+        <div class="col-md-6 d-flex">
+          <div class="align-self-start text-center" style="font-weight: bold;">
+            <h1 style="font-weight: bold;">R$ 100.000,00</h1>
+            <p class="mt-5">
+              Seja o proprietário orgulhoso desta propriedade impressionante. Com uma arquitetura moderna e elegante, esta casa à venda oferece uma vista deslumbrante e conforto sem igual. Venha conhecer o seu novo refúgio!
+            </p>
+          </div>
+        </div>
+       
+       
+      </div>
+      <div class="row bg-light">
+        <div class="col-md-6 m-auto mb-5 mt-3 d-md-block" style="width: 300px; height: 300px;">
+          <img class="img-fluid rounded-5" style="width: 300px; height: 300px;" src="img/casa4.jpg">
+        </div> 
+        <div class="col-md-6 d-flex">
+          <div class="align-self-start text-center" style="font-weight: bold;">
+            <h1 style="font-weight: bold;">R$ 150.000,00</h1>
+            <p class="mt-5">
+              Você merece o melhor! Esta casa à venda é perfeita para quem busca uma vida de luxo e conforto. Com ambientes sofisticados, áreas de lazer incríveis e uma localização privilegiada, esta é a oportunidade dos seus sonhos!
+            </p>
+          </div>
+        </div>
+       
+       
+      </div>
+      <div class="row bg-light">
+        <div class="col-md-6 m-auto mb-5 mt-3 d-md-block" style="width: 300px; height: 300px;">
+          <img class="img-fluid rounded-5" style="width: 300px; height: 300px;" src="img/casa5.jpg">
+        </div> 
+        <div class="col-md-6 d-flex">
+          <div class="align-self-start text-center" style="font-weight: bold;">
+            <h1 style="font-weight: bold;">R$ 300.000,00</h1>
+            <p class="mt-5">
+              Uma combinação perfeita entre estilo e funcionalidade. Esta casa à venda apresenta um design contemporâneo e uma distribuição inteligente dos espaços. Venha se encantar com cada detalhe!
+            </p>
+          </div>
+        </div>
+       
+       
+      </div>
+      <div class="row bg-light">
+        <div class="col-md-6 m-auto mb-5 mt-3 d-md-block" style="width: 300px; height: 300px;">
+          <img class="img-fluid rounded-5" style="width: 300px; height: 300px;" src="img/casa6.jpg">
+        </div> 
+        <div class="col-md-6 d-flex bg-light">
+          <div class="align-self-start text-center" style="font-weight: bold;">
+            <h1 style="font-weight: bold;">R$ 220.000,00</h1>
+            <p class="mt-5">
+              Sinta-se em casa desde o primeiro passo! Esta encantadora propriedade à venda oferece todo o aconchego e praticidade que você procura. Com ambientes aconchegantes e uma atmosfera acolhedora, você vai se apaixonar à primeira vista!
+            </p>
+          </div>
+        </div>
+       
+       
+      </div>
+      <div class="row bg-light">
+        <div class="col-md-6 m-auto mb-5 mt-3 d-md-block" style="width: 300px; height: 300px;">
+          <img class="img-fluid rounded-5" style="width: 300px; height: 300px;" src="img/casa7.jpg">
+        </div> 
+        <div class="col-md-6 d-flex">
+          <div class="align-self-start text-center" style="font-weight: bold;">
+            <h1 style="font-weight: bold;">R$ 130.000,00</h1>
+            <p class="mt-5">
+              Viva em um verdadeiro paraíso! Esta casa à venda oferece um ambiente tranquilo e uma vista deslumbrante para a natureza. Com espaços amplos e uma energia única, aqui você encontrará paz e conforto para toda a família
+            </p>
+          </div>
+        </div>
+       
+       
+      </div>
+    </div>
+ 
+
+  <footer style=" text-align: center;">
+    <div class="d-lg-flex d-sm-block flex-lg-row flex-sm-column w-100 m-auto  " id="rodape">
+      <div class="d-block mt-5 w-75" id="info">
+        <span class="d-block p-2">Política de Privacidade</span>
+        <span class="d-block p-2">Termos de Uso</span>
+        <span class="d-block p-2">FAQ</span>
+      </div>
+      <div id="contato" class="d-block mt-2 w-75">
+        <span class="d-block p-2">Contatos</span>
+        <span class="d-block p-2">Telefone: (11) 3333-3333</span>
+        <span class="d-block p-2">E-mail: contato@happyhouse.com.br</span>
+        <span class="d-block p-2">Endereço: Av. das Estrelas, 4000 - Bairro dos Sonhos, São Paulo - SP</span>
+      </div>
+      <div id="redes" class="d-block mt-2 flex-sm-column w-75">
+        <span class="d-block mb-3 p-2">Redes Sociais</span>
+        <div id="iconsR">
+          <span class="d-inline p-2"><i class="fab fa-facebook-square bg-light"
+              style="color: #1877f2; font-size: 40px;"></i></span>
+
+          <span id="insta" class="d-inline p-2 "><i class="fab fa-linkedin bg-light"
+              style="color: #0e76a8;font-size: 40px;"></i></span>
+        </div>
+        <span class="d-block mt-4 p-2">&copy; Happy House Todos os direitos reservados</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://prod.spline.design/Sh0XPlsLNe9oTMfh/scene.splinecode">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <title>Happy House</title>
+  <link rel="shortcut icon" href="img/1 (1).png" type="image/x-icon">
+  <style>
+    body,
+    html {
+      cursor: url(img/simbolo-de-negocios-imobiliarios-chave-da-casa.svg), default;
+      height: auto;
+      background-color: rgba(250, 235, 215, 0.31);
+      font-family: 'Calibri','Helvetica', sans-serif;
+    }
+
+    .navbar {
+      height: auto;
+      background-color: #f5c26483;
+      cursor: url(img/simbolo-de-negocios-imobiliarios-chave-da-casa.svg), default;
+
+    }
+
+
+
+    #logo,
+    a {
+      position: relative;
+      bottom: 1rem;
+
+
+    }
+
+
+    #navbarScroll {
+      background-color: #17353B;
+      max-width: 600px !important;
+      border-radius: 20px;
+      margin-right: 10%;
+      font-weight: bold;
+
+    }
+
+    ul {
+      text-transform: uppercase;
+      margin-top: 1.5rem;
+
+    }
+
+    .nav-link {
+      color: white;
+    }
+
+    ul>li>a:hover {
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    a.dropdown-item {
+      color: white;
+      font-weight: bold;
+    }
+
+    .apresentar {
+      margin-left: 1%;
+    }
+
+    #map {
+      border: 5px solid rgba(43, 255, 106, 0.603);
+      max-width: 40vw;
+      margin-right: 1.05rem;
+      border-radius: 10px;
+      position: relative;
+      right: 2.4rem;
+      bottom: 8rem;
+      float: right;
+    }
+
+    #map:hover {
+      border: 5px solid rgb(1, 225, 20);
+
+    }
+
+    footer {
+      align-items: center;
+      height: auto;
+      background-color: #edd0a6f6;
+      font-weight: bold;
+      margin-top: 10%;
+    }
+
+
+    .animation-name {
+      animation: animation-name 5s ease-in-out alternate infinite;
+
+    }
+
+    /* Defines the animation */
+    @keyframes animation-name {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    iframe {
+      border: 1px solid black;
+      position: relative;
+      height: 0;
+
+    }
+
+    
+    .teste{
+      margin-left: 2%;
+      padding-left: 5rem;
+      margin-top: 5%;
+    }
+    .teste img {
+      -webkit-transition: -webkit-transform .5s ease;
+      transition: transform .5s ease-in;
+     
+    }
+
+    .teste:hover{
+      margin-top: 30%;
+    }
+    .teste:hover img {
+      transform: scale(1.5);
+     
+    }
+
+    .mapa iframe {
+
+      height: 100%;
+      width: 100%;
+      position: relative;
+
+    }
+
+    .geo {
+      color: white;
+      text-shadow: 3px 3px 3px black;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar  navbar-expand-lg me-2">
+      <div class="container-fluid ">
+        <a class="navbar-brand  mt-4" href="#"><img id="logo" src="img/1 (1).png" class="img-fluid" width="142">
+          <h1 style="font-weight: bold; font-family: cursive; text-shadow: 2px 3px 3px white; color: #17353B;">Happy
+            House</h1>
+        </a>
+        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center " id="navbarScroll">
+          <ul class="navbar-nav navbar-nav-scroll  " style="--bs-scroll-height: 200px; ">
+            <li class="nav-item m-lg-3">
+              <a class="nav-link  mx-4 mt-1" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item m-lg-3 dropdown">
+              <a class="nav-link  dropdown-toggle mx-4" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Casas
+              </a>
+              <ul class="dropdown-menu justify-content-center mt-md-4 ">
+
+                <li><a class="dropdown-item bg-success mt-3" href="compra.html">Comprar</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item bg-success mt-5" href="#">Alugar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item m-lg-3">
+              <a class="nav-link mx-4" href="#">Sobre nós</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <div class="row text-center">
+        <h3 class="mt-3 " style="color: #ffffff; font-weight: bold; background-color: #17353B; border-radius: 10px;">Você merece!<br> Encontre a casa perfeita.</h3>
+        <div class="col-md-4 mt-4 d-flex mapa">
+          <div class="ms-lg-5 me-lg-5 mb-5 pb-5 mt-4 align-self-center text-center w-100 h-100">
+
+            <h5 class="bg-warning ml-4 pt-2 p-3 geo" style="font-weight: bold;">Localize sua Região</h4>
+              <iframe class="w-100 h-100"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14632.360742291437!2d-46.3336866!3d-23.5292585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1687475066923!5m2!1spt-BR!2sbr"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 d-none d-sm-block d-block d-md-block w-50 g-col-6 ms-5">
+          <img src="img/casal-segurando-uma-pequena-casa-media.jpg" class="img-fluid rounded-5 mt-4 w-100" alt="">
+        </div>
+        <div class="col-4 col-md-4 d-sm-block d-block d-md-block  m-auto mt-5 w-75 text-center teste bg-light" style="font-weight: bold;" >
+          <img src="img/pexels-expect-best-323775.jpg" class="img-fluid rounded-5 mt-4 " alt="" >
+          <h1 class="bg-warning " style="border-radius: 8px; ">Área Externa</h1>
+          <p class="fs-4">Encante-se com a fachada imponente e o charme único desta casa, um verdadeiro convite para viver momentos especiais.</p>
+        </div>
+        <div class="col-4 col-md-4 d-sm-block d-block d-md-block  m-auto mt-5 w-75 text-center bg-light teste" style="font-weight: bold; text-align: center;">
+          <img class="img-fluid rounded-5 mt-4 " src="img/pexels-pixabay-276554.jpg" alt="">
+          <h1 class="bg-warning " style="border-radius: 8px; ">Área Interna</h1>
+          <p class="fs-4">
+            Descubra um interior sofisticado e aconchegante, onde cada detalhe foi pensado para proporcionar conforto e bem-estar. Sinta-se em casa e aproveite cada espaço com toda a comodidade que você merece.
+          </p>
+        </div>
+      </div>
+      <div class="w-50  m-auto mt-5" style="position: relative;  padding-bottom: 0; box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.677); margin-top: 1.6em; overflow: hidden; border-radius: 10px;">
+        <iframe style="height: 400px; width: 100%; " loading="lazy"
+          src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFnmVDcMD8&#x2F;watch?embed"
+          allowfullscreen="allowfullscreen" allow="fullscreen">
+        </iframe>
+      </div>
+     
+    </div>
+  </section><!--/fim seção home -->
+  <footer style=" text-align: center;">
+    <div class="d-lg-flex d-sm-block flex-lg-row flex-sm-column w-100 m-auto  " id="rodape">
+      <div class="d-block mt-5 w-75" id="info">
+        <span class="d-block p-2">Política de Privacidade</span>
+        <span class="d-block p-2">Termos de Uso</span>
+        <span class="d-block p-2">FAQ</span>
+      </div>
+      <div id="contato" class="d-block mt-2 w-75">
+        <span class="d-block p-2">Contatos</span>
+        <span class="d-block p-2">Telefone: (11) 3333-3333</span>
+        <span class="d-block p-2">E-mail: contato@happyhouse.com.br</span>
+        <span class="d-block p-2">Endereço: Av. das Estrelas, 4000 - Bairro dos Sonhos, São Paulo - SP</span>
+      </div>
+      <div id="redes" class="d-block mt-2 flex-sm-column w-75">
+        <span class="d-block mb-3 p-2">Redes Sociais</span>
+        <div id="iconsR">
+          <span class="d-inline p-2"><i class="fab fa-facebook-square bg-light"
+              style="color: #1877f2; font-size: 40px;"></i></span>
+
+          <span id="insta" class="d-inline p-2 "><i class="fab fa-linkedin bg-light"
+              style="color: #0e76a8;font-size: 40px;"></i></span>
+        </div>
+        <span class="d-block mt-4 p-2">&copy; Happy House Todos os direitos reservados</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
