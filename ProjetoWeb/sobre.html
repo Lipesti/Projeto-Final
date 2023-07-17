@@ -1,135 +1,245 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-        
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 
-        <!-- Css -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="css/sobre.css">
-        <title>Happy House</title>
-        <link rel="shortcut icon" href="img/1.png" type="image/x-icon">
-        <style>
-       
-          .input-with-icon {
-              padding-right: 50px;
-          }
-      
-          .input-with-icon input {
-              padding-right: 20px;
-          }
-      
-          .input-with-icon .icon {
-              position: absolute;
-              right: 15px;
-              top: 50%;
-              transform: translateY(-50%);
-          }
-      
-      </style>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
-              <div class="container">
-                <a href="index.html" class="navbar-brand">
-                  <img id="logo" src="img/1.png" width="242">
-                </a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-                  <i class="fas fa-bars text-black"></i>
-                </button>
-      
-                <div class="collapse navbar-collapse" id="nav-principal">
-                  
-                  <ul class="navbar-nav ml-auto pl-4">
-                    <li class="nav-item">
-                      <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="compra.html" class="nav-link">Comprar</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">Alugar</a>
-                    </li>      
-                    <li class="nav-item">
-                      <a href="sobre.html" class="nav-link sobre">Sobre nós</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </header>
-          <div class="container d-flex">
-            <div id="equipe">
-              <img src="img/pexels-fauxels-3183197.jpg" alt="">
-              <p>A equipe da Happy House é composta por profissionais experientes, dedicados a criar uma experiência de aluguel de casas única. Nossa equipe inclui proprietários, gerentes de propriedades, consultores de aluguel e assistentes de aluguel.</p>
-            </div>
-            <div id="missao">
-              <img src="img/dcbel-QpeBIiUQI_I-unsplash.jpg" alt="">
-              <h2>Bem vindo a Happy House!</h2>
-            </div>
-            <div id="texto-missao">
-              <h2>Nossa Missão</h2>
-              <p>A missão da Happy House é proporcionar aos nossos clientes o melhor serviço de aluguel de casas possível. Acreditamos em proporcionar experiências de aluguel de qualidade, com preços acessíveis e com a facilidade de encontrar a casa ideal. Acreditamos também que os nossos clientes merecem conforto, segurança e tranquilidade ao escolher a sua casa de aluguel.<br><br>
-              A Happy House oferece serviços de aluguel de casas, com foco na qualidade e na segurança. Oferecemos uma variedade de serviços, desde a localização da casa ideal, até a seleção do melhor preço, assim como ajuda com a documentação necessária para o aluguel.</p>
-            </div>
-            <div id="empresa">
-              <img src="img/krakenimages-376KN_ISplE-unsplash.jpg" alt="">
-              <p>Fundada em 2010, nossa empresa foi criada pelo casal Felipe e Juliana, que têm mais de 10 anos de experiência na área imobiliária. Nossa missão é oferecer serviços imobiliários de qualidade a preços acessíveis, para que todos possam desfrutar de um lar acolhedor.</p>
-            </div>
-          </div>
-          <footer>
-            <div id="rodape">
-              <div id="info">
-                <span>Política de Privacidade</span>
-                <span>Termos de Uso</span>
-                <span>FAQ</span>
-              </div>
-              <div id="contato">
-                <span>Contatos</span>
-                <span>Telefone: (11) 3333-3333</span>
-                <span>E-mail: contato@happyhouse.com.br</span>
-                <span>Endereço: Av. das Estrelas, 4000 - Bairro dos Sonhos, São Paulo - SP</span>
-              </div>
-              <div id="redes">
-                <span>Redes Sociais</span>
-                <div id="iconsR">
-                  <span><i class="fab fa-facebook-square" style="color: #1877f2;"></i></span>
-                  
-                  <span id="insta"><i class="fab fa-instagram" style="color: #FFFFFF;"></i></span>
-                </div>
-                <span>&copy; Happy House Todos os direitos reservados</span>
-              </div>
-            </div>
-          </footer>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <title>Happy House</title>
+  <link rel="shortcut icon" href="img/1 (1).png" type="image/x-icon">
+  <style>
+    body,
+    html {
+      cursor: url(img/simbolo-de-negocios-imobiliarios-chave-da-casa.svg), default;
+      height: auto;
+      background-color: rgba(250, 235, 215, 0.69);
+      font-family: 'Calibri', 'Helvetica', sans-serif;
+    }
+
+    .navbar {
+      height: auto;
+      background-color: #f5c26483;
+      cursor: url(img/simbolo-de-negocios-imobiliarios-chave-da-casa.svg), default;
+
+    }
+
+    #logo,
+    a {
+      position: relative;
+      bottom: 1rem;
 
 
-            <!-- JavaScript (Opcional) -->
-        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
+    }
+
+
+    #navbarScroll {
+      background-color: #17353B;
+      max-width: 600px !important;
+      border-radius: 20px;
+      margin-right: 10%;
+      font-weight: bold;
+
+    }
+
+    ul {
+      text-transform: uppercase;
+      margin-top: 1.5rem;
+
+    }
+
+    .nav-link {
+      color: white;
+    }
+
+    ul>li>a:hover {
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    a.dropdown-item {
+      color: white;
+      font-weight: bold;
+    }
+
+    footer {
+      align-items: center;
+      height: auto;
+      background-color: #edd0a6f6;
+      font-weight: bold;
+      margin-top: 10%;
+    }
+
+    form {
+      border: 2px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+
+    }
+
+    label {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar  navbar-expand-lg me-2">
+      <div class="container-fluid ">
+        <a class="navbar-brand  mt-4" href="#"><img id="logo" src="img/1 (1).png" class="img-fluid" width="142">
+          <h1 style="font-weight: bold; font-family: cursive; text-shadow: 2px 3px 3px white; color: #17353B;">Happy
+            House</h1>
+        </a>
+        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center " id="navbarScroll">
+          <ul class="navbar-nav navbar-nav-scroll  " style="--bs-scroll-height: 200px; ">
+            <li class="nav-item m-lg-3">
+              <a class="nav-link  mx-4 mt-1" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item m-lg-3 dropdown">
+              <a class="nav-link  dropdown-toggle mx-4" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Casas
+              </a>
+              <ul class="dropdown-menu justify-content-center mt-md-4 ">
+
+                <li><a class="dropdown-item bg-success mt-3" href="compra.html">Comprar</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item bg-success mt-5" href="alugar.html">Alugar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item m-lg-3">
+              <a class="nav-link mx-4" href="sobre.html">Sobre nós</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container text-center d-flex flex-column flex-md-row">
+    <div class="row">
+      <div class="col-md-4 align-self-center rounded-5  me-5 bg-light mb-4 mb-md-0">
+        <h2 class="mt-2" style="font-weight: bold;">Nossa Equipe</h2>
+        <img class="img-fluid rounded-5 mt-2" src="img/pexels-fauxels-3183197.jpg" alt="">
+        <p class="fs-5 mt-3" style="text-align: center;font-weight: bold;">
+          A Happy House é uma imobiliária que conta com uma equipe altamente qualificada para atender seus clientes e
+          tornar a experiência de compra, venda ou aluguel de imóveis mais agradável e eficiente. Seu time é composto
+          por profissionais experientes, como corretores de imóveis, assistentes administrativos, gerentes e diretores,
+          que trabalham juntos para garantir a satisfação dos seus clientes.
+        </p>
+      </div>
+      <div class="col-md-6 d-none d-sm-block col-sm-6 col-12 align-self-start ">
+        <img class="rounded-5 img-fluid" src="img/dcbel-QpeBIiUQI_I-unsplash.jpg" alt="">
+
+        <div class="rounded-5 bg-light mb-4 mb-md-0">
+          <p class="fs-5 " style="text-align: center;font-weight: bold;">
+            A Happy House é uma empresa com uma missão muito clara: proporcionar aos seus clientes uma experiência única
+            e satisfatória em todos os negócios imobiliários. Especializada em vendas e aluguel de casas de alto nível e
+            qualidade, a empresa tem como objetivo principal ser uma referência no mercado, oferecendo sempre os
+            melhores imóveis, com preços justos e comodidade para aqueles que buscam realizar seus sonhos de moradia.
+
+          </p>
+         
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-12 align-self-center bg-light rounded-5  mt-5">
+        <h2 class="mt-2" style="font-weight: bold;">Proprietários</h2>
+        <img class="img-fluid rounded-5 mt-2" src="img/krakenimages-376KN_ISplE-unsplash.jpg" alt="">
+        <p class="fs-5 mt-3" style="text-align: center;font-weight: bold;">
+          Felipe e Juliana são os proprietários da Happy House, uma empresa que iniciou suas atividades em 2010. Desde
+          então, sua caminhada tem sido marcada pelo compromisso com a qualidade dos serviços oferecidos e pela atenção
+          aos clientes, que sempre foram considerados a peça fundamental do negócio. Desde o início, a Happy House se
+          destacou no mercado imobiliário, oferecendo as melhores opções de venda e aluguel de casas, com agilidade e
+          transparência. 
+        </p>
+      </div>
+      <div class="col"  >
+        <div class="mt-3" >
+          <form action="lipes.santos02@gmail.com" method="POST" enctype="text/plain" style="box-shadow: 8px 4px 8px black;">
+            <input type="text" name="nome" placeholder="Nome" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <textarea name="mensagem" placeholder="Mensagem" required></textarea><br>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+ 
+
+  <footer style=" text-align: center;">
+    <div class="d-lg-flex d-sm-block flex-lg-row flex-sm-column w-100 m-auto  " id="rodape">
+      <div class="d-block mt-5 w-75" id="info">
+        <span class="d-block p-2">Política de Privacidade</span>
+        <span class="d-block p-2">Termos de Uso</span>
+        <span class="d-block p-2">FAQ</span>
+      </div>
+      <div id="contato" class="d-block mt-2 w-75">
+        <span class="d-block p-2">Contatos</span>
+        <span class="d-block p-2">Telefone: (11) 3333-3333</span>
+        <span class="d-block p-2">E-mail: contato@happyhouse.com.br</span>
+        <span class="d-block p-2">Endereço: Av. das Estrelas, 4000 - Bairro dos Sonhos, São Paulo - SP</span>
+      </div>
+      <div id="redes" class="d-block mt-2 flex-sm-column w-75">
+        <span class="d-block mb-3 p-2">Redes Sociais</span>
+        <div id="iconsR">
+          <span class="d-inline p-2"><i class="fab fa-facebook-square bg-light"
+              style="color: #1877f2; font-size: 40px;"></i></span>
+
+          <span id="insta" class="d-inline p-2 "><i class="fab fa-linkedin bg-light"
+              style="color: #0e76a8;font-size: 40px;"></i></span>
+        </div>
+        <span class="d-block mt-4 p-2">&copy; Happy House Todos os direitos reservados</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
-
-<!-- <ul class="navbar-nav ml-auto pl-4">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="compra.html" class="nav-link">Comprar</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Alugar</a>
-              </li>      
-              <li class="nav-item">
-                <a href="sobre.html" class="nav-link sobre">Sobre nós</a>
-              </li>
-            </ul> -->

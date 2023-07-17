@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://prod.spline.design/Sh0XPlsLNe9oTMfh/scene.splinecode">
+  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
@@ -20,7 +20,7 @@
     html {
       cursor: url(img/simbolo-de-negocios-imobiliarios-chave-da-casa.svg), default;
       height: auto;
-      background-color: rgba(250, 235, 215, 0.31);
+      background-color: rgba(250, 235, 215, 0.69);
       font-family: 'Calibri','Helvetica', sans-serif;
     }
 
@@ -31,16 +31,11 @@
 
     }
 
-
-
     #logo,
     a {
       position: relative;
       bottom: 1rem;
-
-
     }
-
 
     #navbarScroll {
       background-color: #17353B;
@@ -48,19 +43,19 @@
       border-radius: 20px;
       margin-right: 10%;
       font-weight: bold;
-
+      box-shadow: 6px 6px 6px black;
     }
 
     ul {
       text-transform: uppercase;
       margin-top: 1.5rem;
-
     }
 
     .nav-link {
       color: white;
     }
 
+   
     ul>li>a:hover {
       background-color: rgb(255, 255, 255);
       border-radius: 10px;
@@ -144,7 +139,7 @@
       margin-top: 30%;
     }
     .teste:hover img {
-      transform: scale(1.5);
+      transform: scale(1.1);
      
     }
 
@@ -160,11 +155,68 @@
       color: white;
       text-shadow: 3px 3px 3px black;
     }
+    @keyframes geo {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .geo {
+      animation: geo 3s linear infinite;
+    }
+
+    .maps {
+      box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.6s ease;
+    }
+    
+    .maps:hover {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+    }
+
+    #contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+  }
+
+  #contact-form input[type="text"],
+  #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+
+  #contact-form textarea {
+      height: 150px;
+  }
+
+  #contact-form button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+
+  #contact-form button:hover {
+      background-color: #45a049;
+  }
   </style>
 </head>
 
 <body>
-  <header>
+  <header class="w-100">
     <nav class="navbar  navbar-expand-lg me-2">
       <div class="container-fluid ">
         <a class="navbar-brand  mt-4" href="#"><img id="logo" src="img/1 (1).png" class="img-fluid" width="142">
@@ -192,11 +244,11 @@
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item bg-success mt-5" href="#">Alugar</a></li>
+                <li><a class="dropdown-item bg-success mt-5" href="alugar.html">Alugar</a></li>
               </ul>
             </li>
             <li class="nav-item m-lg-3">
-              <a class="nav-link mx-4" href="#">Sobre nós</a>
+              <a class="nav-link mx-4" href="sobre.html">Sobre nós</a>
             </li>
           </ul>
           
@@ -206,13 +258,15 @@
   </header>
 
   <section id="home">
-    <div class="container">
+    <div class="container justify-content-center">
       <div class="row text-center">
-        <h3 class="mt-3 " style="color: #ffffff; font-weight: bold; background-color: #17353B; border-radius: 10px;">Você merece!<br> Encontre a casa perfeita.</h3>
+        <h3 class="mt-3 h-25" style="color: #ffffff; font-weight: bold; background-color: #17353B; border-radius: 10px;">Você merece!<br> Encontre a casa perfeita.</h3>
         <div class="col-md-4 mt-4 d-flex mapa">
-          <div class="ms-lg-5 me-lg-5 mb-5 pb-5 mt-4 align-self-center text-center w-100 h-100">
+          <div class="ms-lg-5 me-lg-5 mb-5 pb-5 mt-4 align-self-center text-center w-100 h-100 maps">
+            <div class="bg-warning maps">
+            <h4 class="bg-warning ml-4 pt-2 p-3 geo" style="font-weight: bold;">Localize sua Região</h4>
+            </div>
 
-            <h5 class="bg-warning ml-4 pt-2 p-3 geo" style="font-weight: bold;">Localize sua Região</h4>
               <iframe class="w-100 h-100"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14632.360742291437!2d-46.3336866!3d-23.5292585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1687475066923!5m2!1spt-BR!2sbr"
                 style="border:0;" allowfullscreen="" loading="lazy"
@@ -222,18 +276,19 @@
         <div class="col-4 col-md-4 d-none d-sm-block d-block d-md-block w-50 g-col-6 ms-5">
           <img src="img/casal-segurando-uma-pequena-casa-media.jpg" class="img-fluid rounded-5 mt-4 w-100" alt="">
         </div>
-        <div class="col-4 col-md-4 d-sm-block d-block d-md-block  m-auto mt-5 w-75 text-center teste bg-light" style="font-weight: bold;" >
-          <img src="img/pexels-expect-best-323775.jpg" class="img-fluid rounded-5 mt-4 " alt="" >
-          <h1 class="bg-warning " style="border-radius: 8px; ">Área Externa</h1>
-          <p class="fs-4">Encante-se com a fachada imponente e o charme único desta casa, um verdadeiro convite para viver momentos especiais.</p>
+        <div class="col-4 col-md-4 d-sm-block d-block d-md-block  m-auto mt-5 w-100 text-center rounded-5 pe-5 teste bg-light" style="font-weight: bold; margin-right: auto;" >
+          <img class="d-block w-100 mt-4 rounded-5" src="img/pexels-expect-best-323775.jpg" >
+          <h1 class="bg-warning " style="border-radius: 8px; font-weight: bold; text-shadow: 2px 2px 1px white;">Área Externa</h1>
+          <p class="fs-4 pe-4" style=" text-align: justify;">Encante-se com a fachada imponente e o charme único desta casa, um verdadeiro convite para viver momentos especiais.</p>
         </div>
-        <div class="col-4 col-md-4 d-sm-block d-block d-md-block  m-auto mt-5 w-75 text-center bg-light teste" style="font-weight: bold; text-align: center;">
-          <img class="img-fluid rounded-5 mt-4 " src="img/pexels-pixabay-276554.jpg" alt="">
-          <h1 class="bg-warning " style="border-radius: 8px; ">Área Interna</h1>
-          <p class="fs-4">
-            Descubra um interior sofisticado e aconchegante, onde cada detalhe foi pensado para proporcionar conforto e bem-estar. Sinta-se em casa e aproveite cada espaço com toda a comodidade que você merece.
-          </p>
-        </div>
+      
+       <div class="col-4 col-md-4 d-sm-block d-block d-md-block  m-auto mt-5 w-100 text-center rounded-5 pe-5 teste bg-light" style="font-weight: bold; margin-right: auto;">
+        <img class="d-block rounded-5 mt-4 w-100" src="img/pexels-pixabay-276554.jpg" alt="">
+        <h1 class="bg-warning " style="border-radius: 8px; font-weight: bold; text-shadow: 2px 2px 1px white; ">Área Interna</h1>
+        <p class="fs-4 pe-4" style=" text-align: justify;">
+          Descubra um interior sofisticado e aconchegante, onde cada detalhe foi pensado para proporcionar conforto e bem-estar. Sinta-se em casa e aproveite cada espaço com toda a comodidade que você merece.
+        </p>
+      </div>
       </div>
       <div class="w-50  m-auto mt-5" style="position: relative;  padding-bottom: 0; box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.677); margin-top: 1.6em; overflow: hidden; border-radius: 10px;">
         <iframe style="height: 400px; width: 100%; " loading="lazy"
@@ -241,7 +296,6 @@
           allowfullscreen="allowfullscreen" allow="fullscreen">
         </iframe>
       </div>
-     
     </div>
   </section><!--/fim seção home -->
   <footer style=" text-align: center;">
